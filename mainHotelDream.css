@@ -1,0 +1,307 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.mainHotelDreams {
+  width: 100%;
+  height: auto;
+}
+.mainHotelDreamsBanner {
+  width: 100%;
+  height: auto;
+}
+
+.mainHotelDreamsBanner-innerBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  margin-top: 60px;
+}
+.mainHotelDreamsBanner-datacantainer {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.mainHotelDreamsBanner-informationText {
+  width: 100%;
+  height: auto;
+  font-family: bolder;
+  font-size: 14px;
+  color: #ffffff;
+  display: inline-flex;
+  line-height: 18px;
+  align-items: center;
+}
+.mainHotelDreamsBanner-informationWelcomeText {
+  width: 100%;
+  height: auto;
+  font-family: bolder;
+  font-size: 22px;
+  color: #ffffff;
+  display: inline-flex;
+  line-height: 2;
+  align-items: center;
+}
+.mainHotelDreamsBanner-overLay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  z-index: 2;
+}
+.mainHotelDreamsBanner-imageHolder {
+  width: 100%;
+  height: 100vh;
+  background: url("./hotelmocup.jpg") no-repeat;
+  background-size: 100%;
+}
+.mainHotelDreamsBanner-InnerBoxHolder {
+  width: 100%;
+  height: auto;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+}
+.mainHotelDreamsBanner-Innercantainer {
+  width: calc(100% - 40px);
+  max-width: 1200px;
+  margin: auto;
+}
+.mainHotelDreamsPage .mainHotelDreamsBanner-innerBox {
+  height: 100%;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .mainHotelDreamsBanner-Innercantainer .TextWithButtonHolder-subHeadingText {
+    padding-right: 0 !important;
+  }
+}
+.Image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.Image img {
+  display: none;
+}
+
+.Image-actual,
+.Image-failed {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.Image-failed {
+  background: url(../img/6.svg) no-repeat;
+  background-position: center;
+  background-size: 40%;
+}
+.Image-loaded .Image-actual {
+  opacity: 1;
+}
+.Image-error .Image-failed {
+  opacity: 1;
+}
+@media only screen and (min-width: 320px) and (max-width: 1199px) {
+  .LeftImageHolder .Image-actual,
+  .LeftImageHolder .Image-failed {
+    background-size: contain !important;
+    background-position: center !important;
+  }
+  .RightImageHolder .Image-actual,
+  .RightImageHolder .Image-failed {
+    background-size: contain !important;
+    background-position: center !important;
+  }
+  .mainHotelDreamsPage .mainHotelDreamsBanner .Image-actual {
+    background-position: center bottom !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .JobSeekermainHotelDreamsPage .mainHotelDreamsBanner .Image-actual {
+    background-position: 81% !important;
+    background-size: cover !important;
+  }
+  .RecruitermainHotelDreamsPage .mainHotelDreamsBanner .Image-actual {
+    background-position: 70% !important;
+    background-size: cover !important;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .JobSeekermainHotelDreamsPage .mainHotelDreamsBanner .Image-actual {
+    background: url(../img/JobseekerMobile.jpg) no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+  }
+  .RecruitermainHotelDreamsPage .mainHotelDreamsBanner .Image-actual {
+    background: url(../img/recruiterBannerMobile.jpg) no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+  }
+}
+
+/* header///// */
+
+.mainHotelDreamsHeader {
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  position: fixed;
+  top: 0;
+}
+.mainHotelDreamsHeaderSolid {
+  width: 100%;
+  height: 60px;
+  padding: 0 30px;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 15;
+  box-shadow: 2px 2px 26px 0 rgba(0, 0, 0, 0.2);
+}
+.mainHotelDreamsHeader:hover {
+  background-color: #fff;
+  box-shadow: 2px 2px 26px 0 rgba(0, 0, 0, 0.2);
+}
+.mainHotelDreamsHeader-Container {
+  width: 100%;
+  height: auto;
+  max-height: 60px;
+
+  display: flex;
+  display: -webkit-flex;
+}
+.mainHotelDreamsHeader-leftChild {
+  width: 50%;
+  height: 100%;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: top;
+  justify-content: center;
+}
+.mainHotelDreamsHeader-leftChildContainer {
+  width: 100%;
+  height: auto;
+  display: inline-flex;
+}
+
+.mainHotelDreamsHeader-icon {
+  width: 45px;
+  height: 40px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background: url(../img/logoheader.svg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.mainHotelDreamsHeader-iconWhite {
+  width: 45px;
+  height: 40px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background: url(../img/logo3.svg) no-repeat;
+  background-position: center;
+}
+.mainHotelDreamsHeader-rightChild {
+  width: 50%;
+  height: auto;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: top;
+  justify-content: center;
+  max-height: 60px;
+}
+.mainHotelDreamsHeader-headingTextHolder {
+  width: 100%;
+  height: auto;
+  font-family: semibold;
+  display: inline-flex;
+  justify-content: flex-end;
+}
+.mainHotelDreamsHeader-informationHolder {
+  display: flex;
+  display: -webkit-flex;
+  width: 100%;
+}
+.mainHotelDreamsHeader-headingText {
+  width: 100%;
+  height: auto;
+  padding-right: 25px;
+  font-family: bolder;
+  font-size: 12px;
+  display: inline-flex;
+  color: #000000;
+  align-items: center;
+}
+.mainHotelDreamsHeader-informationText {
+  width: 100%;
+  height: auto;
+  padding-right: 25px;
+  font-family: bolder;
+  font-size: 22px;
+  display: inline-flex;
+  color: #ffffff;
+  align-items: center;
+  text-align: left;
+  line-height: 2;
+}
+.mainHotelDreamsHeader-headingTextActive {
+  width: 100%;
+  height: auto;
+  padding-right: 25px;
+  font-family: bolder;
+  font-size: 12px;
+  display: inline-flex;
+  color: #1cc7d0;
+  align-items: center;
+}
+.mainHotelDreamsHeader-headingText.mainHotelDreamsHeader-headingTextActive {
+  color: #1cc7d0;
+}
+.mainHotelDreamsHeader-headingText:hover {
+  color: #1cc7d0;
+  cursor: pointer;
+}
+.mainHotelDreamsHeader-rightContainerTextholder {
+  width: 100%;
+  display: inline-flex;
+  justify-content: flex-end;
+}
+.mainHotelDreamsHeader-logoHolder {
+  width: 150px;
+  height: 60px;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  border-radius: 3px;
+  cursor: pointer;
+}
